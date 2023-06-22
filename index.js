@@ -25,3 +25,7 @@ const questions = [
         default: "blue",
     },
 ]
+
+prompt(questions).then((answers) => {
+    console.log(answers);
+});
