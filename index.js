@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const prompt = inquirer.createPromptModule();
+const renderLogo = require('./lib/shapes.js');
 const questions = [
     {
         message: "What is the text for your logo? (Can contain no more than three characters)",
@@ -26,6 +27,9 @@ const questions = [
     },
 ]
 
-prompt(questions).then((answers) => {
-    console.log(answers);
+prompt(questions)
+.then((answers) => {
+    const svg = renderLogo(answers);
+    fs.writeFileSync('./examples/logo.svg', svg);
 });
+
