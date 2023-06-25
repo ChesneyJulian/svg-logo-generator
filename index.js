@@ -29,12 +29,12 @@ const questions = [
 
 prompt(questions)
 .then((answers) => {
+    if (answers.text.length > 3) {
+        throw Error('Text may not exceed three characters.');
+    } else {
+    fs.writeFileSync('./examples/logo.svg', renderLogo(answers));
+    }
     console.log(answers);
     console.log(answers.shapeColor);
-    
-    
-    const svg = renderLogo(answers); 
-    
-    fs.writeFileSync('./examples/logo.svg', svg);
 });
 
