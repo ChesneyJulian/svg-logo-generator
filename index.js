@@ -38,7 +38,7 @@ function init () {
                 };
                 fs.writeFileSync('./output/logo.svg', renderLogo(answers));
             }
-            console.log(answers);
+            console.log('Generated logo.svg');
         });
 };
 
