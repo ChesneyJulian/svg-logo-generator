@@ -7,8 +7,12 @@
 - The text of the logo may not exceed three characters or an error will occur
 - The color for text and shape may be entered with a keyword or a hexadecimal number
 - Once all prompts have been answered, check for an output directory which will contain the logo.svg file 
-## Screen Recording
+## Deployed Program
+### Demonstration Video
 [Watch this](https://drive.google.com/file/d/1w2oRViPHSyFuayhWfc9XWNa0rAseWV-G/view) to see a video of the program in action.
+### Example SVG File
+
+[Circle Logo](https://github.com/ChesneyJulian/svg-logo-generator/blob/a593a47f4c1697b5e1b9bf2e40c6a9ea7b579377/examples/circle.svg)
 ## Sources
 - [Node File System](https://nodejs.org/api/fs.html#file-system) to create output directory and logo.svg file
 - [Inquirer.js](https://www.npmjs.com/package/inquirer) to run command-line interface prompts.
